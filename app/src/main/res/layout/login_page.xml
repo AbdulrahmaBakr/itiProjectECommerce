@@ -5,10 +5,61 @@
     android:layout_height="match_parent"
     tools:context=".login_page">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:src="@drawable/applogo"
+        android:layout_marginTop="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="295dp"
+        android:layout_height="95dp"/>
+
     <TextView
+        android:layout_alignParentEnd="true"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Find , Discovery , Choose and Buy Online..."
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:layout_marginTop="175dp"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        android:textColor="#872843"
+        android:textStyle="bold|italic"
+
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/join_btn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/desgin"
+        android:text="Join ... New Entry"
+        android:textAllCaps="false"
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="1dp"
+        android:background="@drawable/btn_style"
+        android:text="Alerady Have Account !! Login"
+        android:textAllCaps="false"
+        android:textSize="13dp"
+        android:textColor="#FFFFFF"
+        />
 
 </FrameLayout>
