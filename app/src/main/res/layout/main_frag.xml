@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/welcome"
     android:layout_height="match_parent"
-    tools:context=".login_page">
+    tools:context=".main_frag">
 
     <ImageView
         android:src="@drawable/applogo"
@@ -62,4 +63,4 @@
         android:textColor="#FFFFFF"
         />
 
-</FrameLayout>
+</RelativeLayout>

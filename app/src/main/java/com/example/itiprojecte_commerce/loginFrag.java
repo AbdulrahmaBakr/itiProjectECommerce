@@ -9,14 +9,14 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class login_page extends Fragment {
+
+public class loginFrag extends Fragment {
 
 
 
-    public login_page() {
-
+    public loginFrag() {
+        // Required empty public constructor
     }
-
 
 
     @Override
@@ -29,6 +29,6 @@ public class login_page extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.login_page, container, false);
+        return inflater.inflate(R.layout.fragment_login, container, false);
     }
 }
