@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -31,18 +33,24 @@ public class main_frag extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
        View v =  inflater.inflate(R.layout.main_frag, container, false);
-        Button login_btn = v.findViewById(R.id.login_btn);
-        final NavController navController = Navigation.findNavController(v);
+
+       return v;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        final NavController navController = Navigation.findNavController(view);
+        Button login_btn = view.findViewById(R.id.login_btn);
+
 
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 navController.navigate(R.id.action_main_frag_to_loginFrag);
 
             }
         });
-
-
-       return v;
     }
 }
