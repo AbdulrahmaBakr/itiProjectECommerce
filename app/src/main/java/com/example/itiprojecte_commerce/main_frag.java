@@ -42,14 +42,20 @@ public class main_frag extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         final NavController navController = Navigation.findNavController(view);
         Button login_btn = view.findViewById(R.id.login_btn);
-
-
+        Button join_btn =view.findViewById(R.id.join_btn);
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 navController.navigate(R.id.action_main_frag_to_loginFrag);
 
+            }
+        });
+
+        join_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_main_frag_to_registerFrag);
             }
         });
     }

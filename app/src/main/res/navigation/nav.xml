@@ -13,10 +13,25 @@
         <action
             android:id="@+id/action_main_frag_to_loginFrag"
             app:destination="@id/loginFrag" />
+        <action
+            android:id="@+id/action_main_frag_to_registerFrag"
+            app:destination="@id/registerFrag" />
     </fragment>
     <fragment
         android:id="@+id/loginFrag"
         android:name="com.example.itiprojecte_commerce.loginFrag"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registerFrag"
+        android:name="com.example.itiprojecte_commerce.registerFrag"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFrag_to_main_frag"
+            app:destination="@id/main_frag" />
+        <action
+            android:id="@+id/action_registerFrag_to_loginFrag"
+            app:destination="@id/loginFrag" />
+    </fragment>
 </navigation>
